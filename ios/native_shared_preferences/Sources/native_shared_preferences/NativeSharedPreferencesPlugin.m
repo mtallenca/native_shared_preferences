@@ -1,4 +1,4 @@
-#import "NativeSharedPreferencesPlugin.h"
+#import "./include/native_shared_preferences/NativeSharedPreferencesPlugin.h"
 
 @implementation NativeSharedPreferencesPlugin
 
