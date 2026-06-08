@@ -1,3 +1,20 @@
+## 2.0.11 - 2026-06-08
+
+* Require Flutter 3.44+ and Dart 3.4+.
+* Convert the Android plugin (and the example app's `MainActivity`) from Java to
+  Kotlin and adopt Kotlin Gradle Plugin 2.2.20.
+* Modernize the Android build for the v2 embedding: bump the example app to the
+  declarative Gradle plugin DSL (`pluginManagement` + `dev.flutter.flutter-gradle-plugin`),
+  AGP 8.11.1, Gradle 8.14, compileSdk 35, and Java 11.
+* Remove the legacy `package` attribute from Android manifests (now set via the
+  Gradle `namespace`) and drop the v1 `io.flutter.app.FlutterApplication` from the
+  example app's manifest.
+* Remove the deprecated v1 `registerWith` embedding API from the Android plugin.
+* Add Swift Package Manager support alongside CocoaPods: restructure the iOS
+  plugin into the Flutter SPM source layout with a `Package.swift` manifest, bump
+  the iOS deployment target to 12.0, and drop the obsolete `VALID_ARCHS` xcconfig
+  that blocked arm64 simulator builds.
+
 ## 2.0.10 - 2024-06-09
 
 * Update packages
